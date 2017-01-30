@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Transpose</string>
+    <string name="move_cursor_left">Move cursor left</string>
+    <string name="swap_at_cursor">Swap characters at cursor</string>
+    <string name="move_cursor_right">Move cursor right</string>
+    <string name="cursor">Text cursor</string>
+    <string name="swap_count">"Swap count: %d"</string>
+    <string name="victory_text">WINRAR!</string>
+</resources>

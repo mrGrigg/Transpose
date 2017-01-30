@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jgrigg.transpose.activities.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/game_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:padding="8dp"
+        android:background="#000000"
+        android:layout_gravity="center_horizontal|center_vertical" >
+
+        <TextView
+            android:id="@+id/game_field_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="40sp"
+            android:textColor="#33ff66" />
+
+        <ImageView
+            android:id="@+id/game_cursor"
+            android:src="@drawable/cursor"
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/cursor"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/reset_puzzle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/game_field"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="Reset Puzzle" />
+
+    <LinearLayout
+        android:id="@+id/game_pad"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            style="@style/GamePad.button"
+            android:id="@+id/game_pad_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/move_cursor_left"
+            android:src="@drawable/ic_arrow_back_large" />
+
+        <ImageButton
+            style="@style/GamePad.button"
+            android:id="@+id/game_pad_swap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/swap_at_cursor"
+            android:src="@drawable/ic_swap_horiz_large" />
+
+        <ImageButton
+            style="@style/GamePad.button"
+            android:id="@+id/game_pad_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/move_cursor_right"
+            android:src="@drawable/ic_arrow_forward_large" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/moves_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/game_pad"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:text="0"  />
+</RelativeLayout>
