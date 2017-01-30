@@ -3,7 +3,7 @@ Transpose is a very basic game where the player transposes two characters to ord
 
 ![Puzzle](/puzzle.gif?raw=true "Puzzle")
 
-![Winrar](/winner.gif?raw=true "Winner")
+![Winrar](/winrar.gif?raw=true "Winner")
 
 ### Note
 This game is not fun.
